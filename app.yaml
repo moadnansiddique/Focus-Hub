@@ -1,0 +1,17 @@
+runtime: nodejs18
+
+handlers:
+  # Route all requests to index.html for SPA support
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+
+  # Serve the entry point script
+  - url: /index.tsx
+    static_files: index.tsx
+    upload: index.tsx
+
+  # Serve other assets if they exist (icons, manifest, etc.)
+  - url: /(.+)
+    static_files: \1
+    upload: (.+)

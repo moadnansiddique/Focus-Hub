@@ -1,0 +1,7 @@
+{
+  "name": "Focus Hub",
+  "description": "A sophisticated screen-time intervention tool that forces you to complete AI-driven mental, physical, and mindful challenges before accessing distracting applications.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
